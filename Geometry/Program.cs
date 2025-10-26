@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using NUnit.Framework.Internal;
+
 namespace Geometry;
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
+        if (args.Length > 0 && args[0] == "RunTests")
+        {
+            Console.WriteLine("Running tests...");
+            Tests.AllTests();
+        }
         // Example points
         var points = new List<Point>
         {
@@ -30,5 +37,7 @@ class Program
             foreach (var p in cell)
                 Console.WriteLine($"  Cell vertex: ({p.X}, {p.Y})");
         }
+        
+
     }
 }

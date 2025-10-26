@@ -1,36 +1,91 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net9.0": {
+      "NUnit/4.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net8.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NUnit/4.4.0": {
+      "sha512": "7IWJcT9xWNhG9dEGdgAWdH6maCE0eVbeVnizvXACKbAyxbjoJ9+WaEb8qsCTJi3hsb18AJBtoqvWa3G7YYUQfw==",
+      "type": "package",
+      "path": "nunit/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.md",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net462/nunit.framework.dll",
+        "lib/net462/nunit.framework.legacy.dll",
+        "lib/net462/nunit.framework.legacy.xml",
+        "lib/net462/nunit.framework.xml",
+        "lib/net6.0/nunit.framework.dll",
+        "lib/net6.0/nunit.framework.legacy.dll",
+        "lib/net6.0/nunit.framework.legacy.xml",
+        "lib/net6.0/nunit.framework.xml",
+        "lib/net8.0/nunit.framework.dll",
+        "lib/net8.0/nunit.framework.legacy.dll",
+        "lib/net8.0/nunit.framework.legacy.xml",
+        "lib/net8.0/nunit.framework.xml",
+        "nunit.4.4.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net9.0": [
+      "NUnit >= 4.4.0"
+    ]
   },
   "packageFolders": {
-    "/Users/sereyna/.nuget/packages/": {}
+    "/Users/gsagarin/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj",
+      "projectUniqueName": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj",
       "projectName": "Geometry",
-      "projectPath": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj",
-      "packagesPath": "/Users/sereyna/.nuget/packages/",
-      "outputPath": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/obj/",
+      "projectPath": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj",
+      "packagesPath": "/Users/gsagarin/.nuget/packages/",
+      "outputPath": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sereyna/.nuget/NuGet/NuGet.Config"
+        "/Users/gsagarin/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net9.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "projectReferences": {}
         }
       },
@@ -38,11 +93,23 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.4.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -59,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/gsagarin/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

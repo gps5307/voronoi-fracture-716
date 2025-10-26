@@ -5,7 +5,7 @@ using System.Linq;
 namespace Geometry
 {
     /// <summary>
-    /// This is the class that converts the Dalaunay triangles to Voroini polygons
+    /// This is the class that converts the Delaunay triangles to Voronoi polygons
     /// </summary>
     public class VoronoiGenerator
     {

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QwoyA41DGQ+QzzqWSLFd69lgYVyP6dpinCdvrPPApwTCMDqJEhU4r3p8CFKwVKhCsglFwc3AaPXu72LsPC9EPw==",
+  "dgSpecHash": "EjpHClotBG0=",
   "success": true,
-  "projectFilePath": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj",
+  "expectedPackageFiles": [
+    "/Users/gsagarin/.nuget/packages/nunit/4.4.0/nunit.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
