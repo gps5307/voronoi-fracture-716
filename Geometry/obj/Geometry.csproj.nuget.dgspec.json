@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj": {}
+    "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj": {}
   },
   "projects": {
-    "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj": {
+    "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj",
+        "projectUniqueName": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj",
         "projectName": "Geometry",
-        "projectPath": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/Geometry.csproj",
-        "packagesPath": "/Users/sereyna/.nuget/packages/",
-        "outputPath": "/Users/sereyna/CS 716/voronoi-fracture-716/Geometry/obj/",
+        "projectPath": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/Geometry.csproj",
+        "packagesPath": "/Users/gsagarin/.nuget/packages/",
+        "outputPath": "/Users/gsagarin/Documents/GitHub/voronoi-fracture-716/Geometry/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sereyna/.nuget/NuGet/NuGet.Config"
+          "/Users/gsagarin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net9.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -32,11 +32,23 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.405/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gsagarin/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

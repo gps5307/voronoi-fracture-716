@@ -59,7 +59,7 @@ namespace Geometry
                     triangles.Add(new Triangle(edge.P1, edge.P2, point));
             }
 
-            // remove triangles connected to super traingle vertex
+            // remove triangles connected to super triangle vertex
             triangles.RemoveAll(t => t.ContainsVertex(p1) || t.ContainsVertex(p2) || t.ContainsVertex(p3));
             return triangles;
         }

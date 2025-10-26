@@ -27,6 +27,12 @@ namespace Geometry
             return X == other.X && Y == other.Y;
         }
 
+        public double Distance(object? obj)
+        {
+            if (obj is not Point other) return -1;
+            return Math.Sqrt(Math.Pow(X - other.X, 2) + Math.Pow(Y - other.Y, 2));
+        }
+
         public override int GetHashCode()
         {
             return HashCode.Combine(X, Y);
