@@ -1,0 +1,23 @@
+{
+    "circle_small": {
+        "type": "circle",
+        "count": 20,
+        "radius": 50
+    },
+    "circle_large": {
+        "type": "circle",
+        "count": 50,
+        "radius": 150
+    },
+    "grid5": {
+        "type": "grid",
+        "rows": 5,
+        "cols": 5,
+        "spacing": 20
+    },
+    "random30": {
+        "type": "random",
+        "count": 30,
+        "range": 100
+    }
+}

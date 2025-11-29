@@ -14,13 +14,15 @@ class Program
             Tests.AllTests();
         }
         // Example points
-        var points = new List<Point>
+        var ex_points = new List<Point>
         {
             new Point(0,0),
             new Point(100,0),
             new Point(50,100),
             new Point(75,50)
         };
+        var pattern = PatternRegistry.Get("circle_large");
+        var points = PatternGenerator.Generate(pattern);
         // Compute Delaunay triangulation
         var triangles = DelaunayTriangulation.Triangulate(points);
         foreach (var tri in triangles)
@@ -37,7 +39,7 @@ class Program
             foreach (var p in cell)
                 Console.WriteLine($"  Cell vertex: ({p.X}, {p.Y})");
         }
-        
+
 
     }
 }
